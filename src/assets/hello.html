@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Table Generator</title>
+    <style>
+        table {
+        
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Table Generator</h1>
+    <form>
+        <label for="numberInput">Enter a number less than 100:</label>
+        <input type="number" id="numberInput" min="1" max="99" required>
+        <button type="submit">Generate Table</button>
+    </form>
+    <div id="tableContainer"></div>
+
+    <script>
+        const numberInput = document.getElementById('numberInput');
+        const tableContainer = document.getElementById('tableContainer');
+
+        numberInput.addEventListener('input', function(e) {
+            generateTable(Number(e.target.value));
+        });
+
+        function generateTable(number) {
+            tableContainer.innerHTML = '';
+            let tableHtml = '<table><thead><tr><th>X</th><th>Result</th></tr></thead><tbody>';
+
+            for (let i = 1; i <= 10; i++) {
+                let rowHtml = '<tr>';
+
+                for (let j = 1; j <= number; j++) {
+                    rowHtml += `<td>${j} x ${i} = ${i * j}</td>`;
+                }
+
+                tableHtml += `${rowHtml}</tr>`;
+            }
+
+            tableHtml += '</tbody></table>';
+            tableContainer.innerHTML = tableHtml;
+        }
+    </script>
+</body>
+</html>

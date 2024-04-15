@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+   
+}
+.navbar{
+overflow: hidden;
+background:aqua;
+
+
+
+}
+.navbar a{
+    float: right;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+ }
+ .navbar a:hover{
+    background-color: red;
+ }
+ @media screen and () 
+       
+    
+   
