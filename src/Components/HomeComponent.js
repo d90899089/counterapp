@@ -7,7 +7,7 @@ function HomeComponent() {
       <NavComponent />
       <div className="mx-auto max-w-screen-lg  mt-8">
         <h1 className="font-bold bg-blue-500 p-4 text-white text-center">
-          <i>Hello, everyone! Welcome to Priya Creations</i>
+          <i>Hello, everyone! Welcome to Priya Creations ,this creations is very useful to us</i>
         </h1>
         <div className="mt-8">
           <img
