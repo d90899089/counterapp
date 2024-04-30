@@ -29,6 +29,11 @@ function NavComponent() {
             Counter App
           </a>
         </li>
+        <li>
+          <a className="inline-block py-2 px-4 bg-yellow-400 text-white font-bold rounded hover:bg-red-500" href="/upload">
+           Upload File
+          </a>
+        </li>
       </ul>
     </nav>
   );
